@@ -55,13 +55,13 @@ public class CompressSpecCreator implements Creator<CompressSpecCreator> {
     }
 
     @Override
-    public CompressSpecCreator inSampleSize(int inSampleSize) {
-        mCompressSpec.options.inSampleSize = inSampleSize;
+    public CompressSpecCreator maxFileSize(float maxSize) {
+        mCompressSpec.options.maxSize = maxSize;
         return this;
     }
 
     @Override
-    public CompressSpecCreator compressThreadNum(int n) {
+    public CompressSpecCreator compressTaskNum(int n) {
         mCompressSpec.compressThreadNum = n;
         return this;
     }

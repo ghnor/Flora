@@ -24,9 +24,9 @@ public interface Creator<T> {
 
     T bitmapConfig(Bitmap.Config config);
 
-    T inSampleSize(int inSampleSize);
+    T maxFileSize(float maxSize);
 
-    T compressThreadNum(int n);
+    T compressTaskNum(int n);
 
     T safeMemory(int safeMemory);
 

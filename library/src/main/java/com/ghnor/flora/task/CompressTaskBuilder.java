@@ -318,14 +318,14 @@ public class CompressTaskBuilder extends CompressComponent implements Creator<Co
     }
 
     @Override
-    public CompressTaskBuilder inSampleSize(int inSampleSize) {
-        mCompressSpecCreator.inSampleSize(inSampleSize);
+    public CompressTaskBuilder maxFileSize(float maxSize) {
+        mCompressSpecCreator.maxFileSize(maxSize);
         return this;
     }
 
     @Override
-    public CompressTaskBuilder compressThreadNum(int n) {
-        mCompressSpecCreator.compressThreadNum(n);
+    public CompressTaskBuilder compressTaskNum(int n) {
+        mCompressSpecCreator.compressTaskNum(n);
         return this;
     }
 
