@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_file"
+        android:title="File"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_file_path"
+        android:title="File Path"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_res"
+        android:title="Res"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_is"
+        android:title="InputStream"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_bytes"
+        android:title="byte[]"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_bitmap"
+        android:title="Bitmap"
+        app:showAsAction="never"/>
+</menu>

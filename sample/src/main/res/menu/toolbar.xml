@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_single"
+        android:title="Single"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_batch"
+        android:title="Batch"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_test_fragment"
+        android:title="Fragment"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_test_support_fragment"
+        android:title="SupportFragment"
+        app:showAsAction="never"/>
+</menu>
