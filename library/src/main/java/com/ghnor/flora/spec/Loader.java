@@ -1,7 +1,7 @@
 package com.ghnor.flora.spec;
 
 import android.graphics.Bitmap;
-import android.support.annotation.IdRes;
+import android.support.annotation.DrawableRes;
 
 import com.ghnor.flora.core.BatchCompressEngine;
 import com.ghnor.flora.core.SingleCompressEngine;
@@ -29,9 +29,9 @@ public interface Loader {
 
     BatchCompressEngine<List<FileDescriptor>, FileDescriptor> load(FileDescriptor... fileDescriptors);
 
-    SingleCompressEngine<Integer> load(@IdRes int resId);
+    SingleCompressEngine<Integer> load(@DrawableRes int resId);
 
-    BatchCompressEngine<List<Integer>, Integer> load(@IdRes int... resId);
+    BatchCompressEngine<List<Integer>, Integer> load(@DrawableRes int... resId);
 
     SingleCompressEngine<InputStream> load(InputStream is);
 

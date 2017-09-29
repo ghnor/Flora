@@ -2,6 +2,17 @@
 
 可能是Android平台上最快的图片压缩框架。
 
+## 依赖
+
+```xml
+dependencies {
+	...
+	
+    compile 'com.android.support:appcompat-v7:25.3.1'
+    compile 'com.ghnor:flora:1.0.0-alpha1'
+}
+```
+
 ## 用法用例
 
 * 异步压缩：

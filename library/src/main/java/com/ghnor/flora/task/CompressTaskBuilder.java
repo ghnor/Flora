@@ -2,7 +2,7 @@ package com.ghnor.flora.task;
 
 import android.graphics.Bitmap;
 import android.net.Uri;
-import android.support.annotation.IdRes;
+import android.support.annotation.DrawableRes;
 
 import com.ghnor.flora.core.BatchCompressEngine;
 import com.ghnor.flora.core.CompressEngineFactory;
@@ -111,14 +111,14 @@ public class CompressTaskBuilder extends CompressComponent implements Creator<Co
      * @return
      */
     @Override
-    public SingleCompressEngine<Integer> load(@IdRes int resId) {
+    public SingleCompressEngine<Integer> load(@DrawableRes int resId) {
         SingleCompressEngine<Integer> engine = CompressEngineFactory.buildResourceSingle(resId, mCompressSpecCreator.create());
         CompressTaskController.getInstance().addTask(mCompressTask.obtainTag(), engine);
         return engine;
     }
 
     @Override
-    public BatchCompressEngine<List<Integer>, Integer> load(@IdRes int... resId) {
+    public BatchCompressEngine<List<Integer>, Integer> load(@DrawableRes int... resId) {
         Integer[] resInteger = new Integer[resId.length];
         for (int index = 0; index < resId.length; index++) {
             resInteger[index] = resId[index];
@@ -217,7 +217,7 @@ public class CompressTaskBuilder extends CompressComponent implements Creator<Co
     }
 
     /**
-     * List<T>
+     * List
      *
      * @param list
      * @return

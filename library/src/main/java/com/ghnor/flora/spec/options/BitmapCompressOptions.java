@@ -22,7 +22,7 @@ public class BitmapCompressOptions extends CompressOptions {
      * By default,using 60.
      * <p>
      *
-     * @see android.graphics.BitmapFactory#inSampleSize
+     * @see android.graphics.BitmapFactory
      */
     public int inSampleSize = DEFAULT_IN_SAMPLE_SIZE;
 }

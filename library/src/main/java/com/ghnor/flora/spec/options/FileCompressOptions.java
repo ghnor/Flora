@@ -18,7 +18,7 @@ public class FileCompressOptions extends BitmapCompressOptions {
     /**
      * The max memory maxSize on the hard disk,unit of KB.
      * <p>
-     * If the value less than or equal to zero,{@link com.ghnor.imagecompressor.spec.CompressSpec} will be automatically set.
+     * If the value less than or equal to zero,{@link com.ghnor.flora.spec.CompressSpec} will be automatically set.
      */
     public float maxSize;
 }

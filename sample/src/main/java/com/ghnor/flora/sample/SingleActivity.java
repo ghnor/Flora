@@ -6,7 +6,6 @@ import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.util.TypedValue;
 import android.view.Menu;
 import android.view.MenuItem;
 
@@ -137,7 +136,7 @@ public class SingleActivity extends BaseActivity {
         try {
             Resources resources = getApplication().getResources();
             Bitmap originBitmap = BitmapFactory.decodeResource(getResources(), R.drawable.test2);
-            InputStream is = resources.openRawResource(R.drawable.test2, new TypedValue());
+            final InputStream is = getResources().getAssets().open("test2.jpg");
             setupSourceInfo(originBitmap, is.available());
             is.close();
 

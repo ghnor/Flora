@@ -1,4 +1,5 @@
 apply plugin: 'com.android.library'
+apply plugin: 'com.novoda.bintray-release'
 
 android {
     compileSdkVersion 25
@@ -19,6 +20,9 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -28,4 +32,21 @@ dependencies {
     })
     provided 'com.android.support:appcompat-v7:25.3.1'
     testCompile 'junit:junit:4.12'
+}
+
+publish {
+    userOrg = 'ghnor'//bintray.com用户名
+    groupId = 'com.ghnor'//jcenter上的路径
+    artifactId = 'flora'//项目名称
+    publishVersion = '1.0.0-alpha1'//版本号
+    desc = 'Picture compression libray on the Android platform'//描述，不重要
+    website = 'https://github.com/ghnor/Flora'//网站，不重要
+}
+
+tasks.withType(Javadoc) {
+    options{
+        encoding "UTF-8"
+        charSet 'UTF-8'
+        links "http://docs.oracle.com/javase/7/docs/api"
+    }
 }
